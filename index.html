@@ -26,7 +26,7 @@
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Heesha Jaanvi</h1>
                 <h6 class="header-mono" >Business Intelligence / Data Engineer</h6>
-                <a href="https://www.linkedin.com/in/heesha-jaanvi-932496196/"><button class="btn btn-info btn-dark"><i class="ti-linkedin pr-2"></i>Linkedln</button> </a>
+                <a href="https://www.linkedin.com/in/heesha-jaanvi-932496196/"><button class="btn btn-info btn-info"><i class="ti-linkedin pr-2"></i>Linkedln</button> </a>
             </div>
         </div>
     </header>
@@ -882,20 +882,35 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
-                        <form action="">
+                        <!-- <form>
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <input id="name" class="form-control" type="text" placeholder="Name *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                                <input id="email" class="form-control" type="email" placeholder="Email *" required>
                             </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" placeholder="Message *" rows="7" required></textarea>
                             </div>
-                        </form>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
+                            </div>
+                        </form>                         -->
+                        <form>
+                            <div class="form-group">
+                                <input id="name" name="name" class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="email" name="email" class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" class="form-control" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
+                            </div>
+                            <div id="alert-box" class="alert d-none" role="alert"></div>
+                        </form>                        
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -946,6 +961,9 @@
         </div>
     </footer>
 
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 	<!-- core  -->
     <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -961,6 +979,8 @@
 
     <!-- JohnDoe js -->
     <script src="public_html/assets/js/johndoe.js"></script>
+    <script src="public_html/assets/js/contact.js"></script>
+
 
 </body>
 </html>
