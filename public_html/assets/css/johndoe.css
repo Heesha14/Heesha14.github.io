@@ -11636,6 +11636,7 @@ pre .code {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 0;
+  background-color: #d4d9d6;
 }
 
 @media (max-width: 991.98px) {
