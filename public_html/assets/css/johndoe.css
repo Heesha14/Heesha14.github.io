@@ -11637,10 +11637,10 @@ pre .code {
           align-items: center;
   padding: 40px 0;
   background-color: #d4d9d6;
-  background-image: url('../imgs/contact-us.jpg'); /* Replace 'path/to/your-image.jpg' with your image path */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center; /* Centers the image */
+  background-image: url('../imgs/contact-us.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
 }
 
 @media (max-width: 991.98px) {
